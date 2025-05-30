@@ -1,3 +1,5 @@
+/** @format */
+
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
@@ -29,15 +31,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
-const corsOptions = process.env.NODE_ENV === "development" 
-  ? {
-      origin: "http://localhost:3000",
-      credentials: true,
-    }
-  : {
-      origin: "https://mamastops.visitflow.site",
-      credentials: true,
-    };
+const corsOptions =
+  process.env.NODE_ENV === "development"
+    ? {
+        origin: "http://localhost:3000",
+        credentials: true,
+      }
+    : {
+        origin: "https://mmt.visitflow.site",
+        credentials: true,
+      };
 
 app.use(cors(corsOptions));
 // Routes
@@ -51,13 +54,12 @@ app.use("/api/visit", visitRoutes);
 app.use("/api/client", clientRoutes);
 app.use("/api/emails", emailRoutes);
 app.use("/api/daily", dailyRoutes);
-app.use("/api/star",authMiddleware, starRoutes);
+app.use("/api/star", authMiddleware, starRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/onboard", onboardRoutes);
 app.use("/api/reviews", reviewRoutes);
 // Error handling middleware
-
 
 const startServer = async () => {
   try {
