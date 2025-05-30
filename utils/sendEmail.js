@@ -1,3 +1,5 @@
+/** @format */
+
 import nodemailer from "nodemailer";
 
 const sendEmailToNewUsers = async (email, password) => {
@@ -25,7 +27,7 @@ const sendEmailToNewUsers = async (email, password) => {
           </div>
           <p style="font-size: 14px; color: #888; text-align: center; margin-top: 20px;">For security reasons, please change your password after logging in.</p>
           <div style="text-align: center; margin-top: 20px;">
-            <a href="https://mamastops.visitflow.site" style="padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Login Now</a>
+            <a href="https://mmt.visitflow.site" style="padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Login Now</a>
           </div>
           <p style="font-size: 14px; color: #888; text-align: center; margin-top: 20px;">If you did not request this, please ignore this email.</p>
           <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ddd;">
