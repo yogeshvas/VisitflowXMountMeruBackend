@@ -51,7 +51,7 @@ const sendFollowUpMetEmail = async (email, userId, clientId) => {
       },
     });
 
-    const reviewLink = `https://mamastops.visitflow.site/reviews?user=${userId}&client=${clientId}`;
+    const reviewLink = `https://mmt.visitflow.site/reviews?user=${userId}&client=${clientId}`;
 
     const mailOptions = {
       from: `"Mamastop Sales Team" <${process.env.EMAIL_USER}>`,
@@ -98,7 +98,7 @@ const sendFollowUpNotMetEmail = async (email, userId, clientId) => {
         pass: process.env.EMAIL_PASS, // App Password
       },
     });
-    const reviewLink = `https://mamastops.visitflow.site/reviews?user=${userId}&client=${clientId}`;
+    const reviewLink = `https://mmt.visitflow.site/reviews?user=${userId}&client=${clientId}`;
 
     const mailOptions = {
       from: `"Mamastop Sales Team" <${process.env.EMAIL_USER}>`,
@@ -152,7 +152,7 @@ const sendProposAndPricingEmail = async (
         pass: process.env.EMAIL_PASS, // App Password
       },
     });
-    const reviewLink = `https://mamastops.visitflow.site/reviews?user=${userId}&client=${clientId}`;
+    const reviewLink = `https://mmt.visitflow.site/reviews?user=${userId}&client=${clientId}`;
 
     const mailOptions = {
       from: `"Mamastop Sales Team" <${process.env.EMAIL_USER}>`,
@@ -202,7 +202,7 @@ const sendOnboardingEmail = async (email, userId, clientId) => {
         pass: process.env.EMAIL_PASS, // App Password
       },
     });
-    const reviewLink = `https://mamastops.visitflow.site/reviews?user=${userId}&client=${clientId}`;
+    const reviewLink = `https://mmt.visitflow.site/reviews?user=${userId}&client=${clientId}`;
 
     const mailOptions = {
       from: `"Mamastop Sales Team" <${process.env.EMAIL_USER}>`,
